@@ -1,18 +1,18 @@
 package ru.notif.bot;
 
-import ru.notif.bot.logic.logic_RequestHanger;
-import ru.notif.bot.platforms.pl_Bot;
-import ru.notif.bot.platforms.pl_InputReader;
-import ru.notif.bot.platforms.pl_OutputWriter;
+import ru.notif.bot.logic.echo_RequestHanger;
+import ru.notif.bot.platforms.console.Console_Bot;
+import ru.notif.bot.platforms.console.Console_InputReader;
+import ru.notif.bot.platforms.console.Console_OutputWriter;
 
 public class Main {
     public static void main(String[] args) {
-        pl_InputReader inputReader = new pl_InputReader();
-        pl_OutputWriter outputWriter = new pl_OutputWriter();
-        logic_RequestHanger requestHandler = new logic_RequestHanger();
+        Console_InputReader inputReader = new Console_InputReader();
+        Console_OutputWriter outputWriter = new Console_OutputWriter();
+        echo_RequestHanger requestHandler = new echo_RequestHanger();
 
         // Создание и запуск консольного бота
-        pl_Bot bot = new pl_Bot(inputReader, requestHandler, outputWriter);
+        Console_Bot bot = new Console_Bot(inputReader, requestHandler, outputWriter);
         bot.startBot();
 
     }

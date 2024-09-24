@@ -1,6 +1,6 @@
 package ru.notif.bot.logic;
 
-public class logic_RequestHanger implements RequestHanger {
+public class echo_RequestHanger implements RequestHanger {
 
     @Override
     public void handle(Request request, OutputWriter writer) {

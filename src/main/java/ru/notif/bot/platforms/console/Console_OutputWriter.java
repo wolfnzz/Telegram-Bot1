@@ -1,9 +1,9 @@
-package ru.notif.bot.platforms;
+package ru.notif.bot.platforms.console;
 
 import ru.notif.bot.logic.OutputWriter;
 import ru.notif.bot.logic.Responce;
 
-public class pl_OutputWriter implements OutputWriter {
+public class Console_OutputWriter implements OutputWriter {
 
     @Override
     public void write(Responce response) {

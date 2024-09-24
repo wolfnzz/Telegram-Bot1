@@ -1,4 +1,4 @@
-package ru.notif.bot.platforms;
+package ru.notif.bot.platforms.console;
 
 import ru.notif.bot.logic.Request;
 

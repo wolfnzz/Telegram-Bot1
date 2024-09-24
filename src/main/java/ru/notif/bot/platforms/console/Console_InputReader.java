@@ -1,9 +1,9 @@
-package ru.notif.bot.platforms;
+package ru.notif.bot.platforms.console;
 
 import java.util.Scanner;
 import ru.notif.bot.logic.Request;
 
-public class pl_InputReader implements InputReader {
+public class Console_InputReader implements InputReader {
 
     private final Scanner scanner = new Scanner(System.in);
 
