@@ -1,16 +1,16 @@
 package ru.notif.bot.platforms.console;
 
 import ru.notif.bot.logic.OutputWriter;
-import ru.notif.bot.logic.RequestHanger;
+import ru.notif.bot.logic.RequestHandler;
 import ru.notif.bot.platforms.telegrambot.Bot;
 
-public class Console_Bot implements Bot {
+public class ConsoleBot implements Bot {
 
     private final InputReader inputReader;
-    private final RequestHanger requestHandler;
+    private final RequestHandler requestHandler;
     private final OutputWriter outputWriter;
 
-    public Console_Bot(InputReader inputReader, RequestHanger requestHandler, OutputWriter outputWriter) {
+    public ConsoleBot(InputReader inputReader, RequestHandler requestHandler, OutputWriter outputWriter) {
         this.inputReader = inputReader;
         this.requestHandler = requestHandler;
         this.outputWriter = outputWriter;
